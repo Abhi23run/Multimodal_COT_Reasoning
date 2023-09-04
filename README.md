@@ -27,8 +27,8 @@
 <!-- References -->
 <h2 id="References"> References </h2>
 <a id="1"> [1] </a>
-[Question answering with T5, Aug 2021](https://www.kaggle.com/code/abdokamr/question-answering-with-t5/)
-
+![Question answering with T5, Aug 2021](https://www.kaggle.com/code/abdokamr/question-answering-with-t5/)
+[I'm an inline-style link](https://www.google.com)
 <!-- Background -->
 <h2 id="Background"> Introduction/Background/Motivation </h2>
 
