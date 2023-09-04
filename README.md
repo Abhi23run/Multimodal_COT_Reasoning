@@ -170,11 +170,12 @@ Descriptions of Individual Models and Associated Loss Curve:
 <h3 id="ModelOutput"> ➤ Sample Model Outputs </h3>  
 * The figure below shows the T5 model output generating answer and explanation simultaneously. It also has the example input (which is a mix of question, choices, context, and hint) and the target output which the model uses in its training phase.
 
-  ![Fig-1](./images/1.png)
+  ![Fig-1](./images/1.png|width=200)
+  <img src="./images/1.png" width=200>
 
 * The figure below shows the same T5 model as in Figure 1 above finetuned for the task of generating answer, explanation, and lecture simultaneously. This produces a rich expression and reasoning behind the model’s answers.
 
-  ![Fig-2](./images/2.png)
+  ![Fig-2](./images/2.png|width=200)
   
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
