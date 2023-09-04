@@ -148,9 +148,13 @@ Descriptions of Individual Models :
 * **Model 5**: Baseline pre-trained T5 model fine-tuned for the task of answer generation with the model generated explanation as input.
 * **Model 6**: fine-tuned Model 2 for the task of answer generation with the model-generated explanation as input.
 
-<h3 id="ModelOutput"> ➤ Model Output Samples </h3>  
-  
+Loss Curves for Individual Models : 
 
+
+<h3 id="ModelOutput"> ➤ Model Output Samples </h3>  
+
+  
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <!-- References -->
 <h2 id="References"> References </h2>
