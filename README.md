@@ -139,6 +139,15 @@ To measure the performance of the models, we used the following metrics:
 | Model 4 | Answer, Explanation        |     48.54%     |        45.84%       |    0.451   |    0.331   |    0.408   |
 | Model 5 | Answer (Input Explanation) |     45.01%     |        41.99%       |      -     |      -     |      -     |
 | Model 6 | Answer (Input Explanation) |     51.76%     |        48.86%       |      -     |      -     |      -     |
+
+Descriptions of Models : 
+* **Model 1**: Baseline pre-trained T5 model fine-tuned for the task of answer generation without the usage of image captions.
+* **Model 2**: Baseline pre-trained T5 model fine-tuned for the task of answer generation with the usage of image captions.
+* **Model 3**: Baseline pre-trained T5 model fine-tuned for the task of answer and explanation generation with the image captions.
+* **Model 4**: Model fine-tuned for the task of generating both answers and explanations using the fine-tuned model for answer generation.
+* **Model 5**: Baseline pre-trained T5 model fine-tuned for the task of answer generation with the model generated explanation as input.
+* **Model 6**: fine-tuned Model 2 for the task of answer generation with the model-generated explanation as input.
+
 <h3 id="ModelOutput"> ➤ Model Output Samples </h3>  
   
 
