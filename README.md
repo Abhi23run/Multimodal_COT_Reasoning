@@ -19,7 +19,7 @@
          <li> <a href= "#Experimentation">  Experimental Settings and Hyperparameters </li>
           <li> <a href= "#Metrics">  Metrics </li>
            <li> <a href= "#KeyFindings"> Key Findings </li>
-            <li> <a href= "#Results"> Results </li>
+            <li> <a href= "#Results"> Results & Loss Curves</li>
              <li> <a href= "#ModelOutput"> Model Outputs </li>
       </ul>
     <li><a href="#References"> ➤ References</a></li>
@@ -128,7 +128,17 @@ To measure the performance of the models, we used the following metrics:
 * Knowledge Distillation with teacher training: We found that the models which utilized the generated explanations from the same model in the previous run (Model5, Model 6) outperformed the model trained on directly generating answers respectively (Model2). This is also intuitive as using the model-generated explanations acts as positive feedback as the model learns to better its prediction on the answers using that as additional input.
 * For the downstream task of answer generation, we also see that the T5-small model trained on the TextVQA dataset outperformed the other models tested on the ScienceQA dataset with a training accuracy of 65.92\% and an accuracy of 62.66\%. This is in accordance with our hypothesis as this dataset had more training examples and all the examples contained images unlike the ScienceQA dataset. Additionally, a lot of the questions in the ScienceQA dataset involved very domain-specific vocabulary and trickier questions for the model to learn from given only the caption and hint which is why we wish to further explore models that take into account vision features as well.
 
-<h3 id="Results"> ➤ Results</h3>  
+<h3 id="Results"> ➤ Results & Loss Curves </h3>  
+<p style="text-align: center;">Table below depicts Evaluation metrics for models on the generation downstream tasks on ScienceQA Dataset</p>
+
+| Model   | Generation Task            | Train Accuracy | Validation Accuracy | Rouge-1 F1 | Rouge-2 F1 | Rouge-L F1 |
+|---------|----------------------------|----------------|---------------------|------------|------------|------------|
+| Model 1 | Answer                     |        -       |        48.74%       |      -     |      -     |      -     |
+| Model 2 | Answer                     |     45.66%     |        43.65%       |      -     |      -     |      -     |
+| Model 3 | Answer, Explanation        |     41.32%     |        39.09%       |    0.41    |    0.298   |    0.375   |
+| Model 4 | Answer, Explanation        |     48.54%     |        45.84%       |    0.451   |    0.331   |    0.408   |
+| Model 5 | Answer (Input Explanation) |     45.01%     |        41.99%       |      -     |      -     |      -     |
+| Model 6 | Answer (Input Explanation) |     51.76%     |        48.86%       |      -     |      -     |      -     |
 <h3 id="ModelOutput"> ➤ Model Output Samples </h3>  
   
 
