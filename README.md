@@ -87,13 +87,22 @@ To evaluate the success of our proposed approach, we conducted a series of exper
 
 The memory and computational requirements needed for creating scalable VQA models constrained us with using models that use both image and text features for question answering. We tried a couple of multi-modal frameworks like ViLT <a href="#5"> [5] </a> and VisualBERT <a href="#7"> [7] </a>. We fine-tuned the ViLT model on the ScienceQA dataset by manually creating domain-specific vocabulary and annotations with scores for probable answers. The model, however, did not perform well on the dataset as it was constrained to generating single-word answers and lacked the capability of generating coherent reasoning like Text-to-Text Language models (T5 <a href="#4"> [4] </a>).
 
-<h3 id="TextQA"> TextQA Tasks </h3>
-➤ We started with a textual question-answering task to evaluate the reasoning capabilities of our models. The following models were used in our experiments:
+<h3 id="TextQA"> ➤ TextQA Tasks </h3>
+We started with a textual question-answering task to evaluate the reasoning capabilities of our models. The following models were used in our experiments:
 
 * Baseline: A simple QA model based on DistilBERT and RoBERTa. These models were chosen due to their relatively small size, making them suitable for training with our computational resources. Moreover, they have been shown to perform decently on multiple-choice questions.
 * T5 without reasoning: We trained a T5-small model without any reasoning capabilities to assess the impact of adding CoT reasoning.
 * T5 with reasoning: We further trained a T5-small model with reasoning capabilities, integrating the CoT approach.
 * T5 with reasoning and image captions: To assess the potential benefits of adding image information, we trained a T5-small model with reasoning capabilities and image captions.
+
+* <h3 id="VisualQA"> ➤ VisualQA Tasks </h3>
+In the second phase of our experiments, we focused on the VQA task, integrating visual embeddings with textual embeddings.
+
+* Fine-tuned VQA model on Science QA Dataset: We fine-tuned the pre-trained ViLT(Vision \& Language Transformer) model for visual question answering. We created domain-specific vocabulary and annotations using the ScienceQA dataset and used the ViLT model to generate answers. The ViLT model, however, did not perform well on the dataset as it was constrained to generating single-word answers and lacked the capability of generating coherent reasoning like Text-to-Text Language models (T5).
+* We also attempted to integrate the visual embeddings from models like DETR into the VisualBert model. However, we were not successfully able to concatenate the visual and text features to re-train the VisualBert model. This was due to the varying hidden dimension of the textual encodings for different downstream task models in VisualBert.
+* Integrated model with T5 textual embeddings: We generated image captions from a Vision Transformer model (ViT-GPT2 <a href="#6"> [6] </a>) and  used that along with textual input to T5-small model and experimented with different training strategies and settings to assess the impact of adding reasoning capabilities and image context.
+We ran our experiments for answer generation on both TextVQA and ScienceQA dataset along with setting up the training for Answer and Explanation generation solely on the ScienceQA dataset where we had ground truth explanations (solutions) for which we measured the Rogue F1 scores.
+
   
 
 
