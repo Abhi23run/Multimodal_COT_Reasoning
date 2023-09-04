@@ -22,7 +22,9 @@
 <!-- Abstract -->
 <h2 id="Abstract"> Abstract </h2>
 
-*Recent advancements in deep learning have led to the development of powerful language models (LMs) that excel in various tasks. Despite these achievements, there is still room for improvement, particularly in enhancing reasoning abilities and incorporating multimodal data. This report investigates the potential impact of combining Chain-of-Thought (CoT) reasoning and Visual Question Answering (VQA) techniques to improve LMs’ accuracy in solving multiple-choice questions. By employing TextVQA and ScienceQA datasets, we assessed the effectiveness of three text embedding methods and three visual embedding approaches. Our experiments aimed to fill the gap in current research by investigating the combined impact of CoT and VQA, contributing to the understanding of how these techniques can improve the reasoning capabilities of state-of-the-art models like GPT-4. Results from our experiments demonstrated the potential of these approaches in enhancing LMs’ reasoning and question-answering capabilities, providing insights for further research and development in the field, and paving the way for more accurate and reliable AI systems that can handle complex reasoning tasks across multiple modalities.*
+*Recent advancements in deep learning have led to the development of powerful language models (LMs) that excel in various tasks. Despite these achievements, there is still room for improvement, particularly in enhancing reasoning abilities and incorporating multimodal data. This report investigates the potential impact of combining Chain-of-Thought (CoT) reasoning and Visual Question Answering (VQA) techniques to improve LMs’ accuracy in solving multiple-choice questions. By employing TextVQA and ScienceQA datasets, we assessed the effectiveness of three text embedding methods and three visual embedding approaches. Our experiments aimed to fill the gap in current research by investigating the combined impact of CoT and VQA, contributing to the understanding of how these techniques can improve the reasoning capabilities of state-of-the-art models like GPT-4. Results from our experiments demonstrated the potential of these approaches in enhancing LMs’ reasoning and question-answering capabilities, providing insights for further research and development in the field, and paving the way for more accurate and reliable AI systems that can handle complex reasoning tasks across multiple modalities.*\
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <!-- Background -->
 <h2 id="Background"> Introduction/Background/Motivation </h2>
@@ -31,9 +33,15 @@ of powerful language models (LMs) that excel in various
 tasks, such as question-answering, translation, and sentiment analysis. However, there is still potential for improvement, particularly in enhancing their reasoning abilities and incorporating multimodal data like images. This report investigates the potential impact of combining Chain-of-Thought reasoning (CoT) <a href="#20"> [20] </a> and Visual Question Answering (VQA) <a href="#18"> [18] </a> techniques to improve LMs’ accuracy
 in solving multiple-choice questions.
 
+The primary objective of this research is to explore the synergistic effects of CoT and VQA on LMs' performance. CoT involves generating rationales for each choice, providing a logical explanation for the model's decision-making process. VQA includes using images as additional information to answer questions. By combining these techniques, we aim to demonstrate substantial improvements in LMs' reasoning and question-answering capabilities.
 
+To assess these techniques' effectiveness, we experimented with three text embedding methods and three visual embedding approaches. Current research primarily focuses on CoT and VQA individually. Our project aims to fill the gap by investigating the combined impact of CoT and VQA, contributing to the understanding of how these techniques can improve the reasoning capabilities of state-of-the-art models like GPT-4 <a href="#14"> [14] </a>.
 
+The datasets utilized in our experiments are TextVQA <a href="#19"> [19] </a> and ScienceQA <a href="#17"> [17] </a>. TextVQA consists of 45,336 questions based on 28,408 images from the Open Images dataset, requiring reasoning and reading about text in the image. ScienceQA contains 21,208 multimodal multiple-choice science questions collected from elementary and high school science curricula, covering a wide range of subjects and offering a rich diversity of domains.
 
+By employing these datasets and combining CoT and VQA techniques, we strive to demonstrate the potential of these approaches in improving LMs' reasoning and question-answering capabilities. The successful integration of these techniques will contribute to the understanding of deep learning models' underlying mechanisms, ultimately leading to the development of more efficient and accurate LMs for a wide range of applications.
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 \\\\
 Contributors: 
