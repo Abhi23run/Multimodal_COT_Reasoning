@@ -119,16 +119,13 @@ To measure the performance of the models, we used the following metrics:
 
 <h3 id="KeyFindings"> ➤ Key Findings </h3>  
 
-
-
-
-\\\\
-Contributors: 
-
-Abhinav Arun<br>
-Dipendra Singh Mal<br>
-Mehul Soni<br>
-Tomohiro Sawada<br>
+* Training and Validation Loss Curves: We analyzed the loss curves specific to all 6 model variants illustrated using Figures 1-6 respectively. Most of the curves showed a sharp dip in the training loss in the first epoch suggesting that the pre-trained T5 model was pretty quick in re-adjusting its weights to better align with the domain-specific examples. The validation losses in most cases were pretty low from the initial get-go. Also, we observed convergence in the training and validation losses for almost all model variants suggesting that running the model for more than 10 epochs would pose the risk of running into an overfitting problem. Also, for (Model6) which we found to be the best-performing model, we could see pretty low values of both training and validation losses when compared to other models from initial epochs.
+* The models that were trained using image captions along with context and hint (Model 2) did not outperform the model without the image captions (Model 1) when compared on the validation dataset. This was slightly counter-intuitive but the reason for it might be that the model suffered from information overload and could not specifically utilize the captions when provided along with hint and context. This also highlights the importance of working with models that can exploit the mutual synergies of different modalities like text and vision features with an attention mechanism to generate coherent reasoning. The idea of using the image features as textual image captions did not yield enhanced performance.
+* The model that was trained to generate answers and explanations simultaneously (Model3) was outperformed by the model trained on just generating answers (Model2). This emphasizes the fact that task-specific training gives  better results and prevents the model from information load.
+* The models that were directly fine-tuned from the pre-trained T5 conditional model on generating both answers and explanations simultaneously (Model3) was outperformed by the model (Model4)  which was fine-tuned first on generating answers and then using that model checkpoint to generate answers and explanations. This makes sense as it emphasizes that the fine-tuned model on a domain-specific dataset could leverage its previous learnings to perform well on subsequent runs.
+* Knowledge Distillation with teacher training: We found that the models which utilized the generated explanations from the same model in the previous run (Model5, Model 6) outperformed the model trained on directly generating answers respectively (Model2). This is also intuitive as using the model-generated explanations acts as positive feedback as the model learns to better its prediction on the answers using that as additional input.
+* For the downstream task of answer generation, we also see that the T5-small model trained on the TextVQA dataset outperformed the other models tested on the ScienceQA dataset with a training accuracy of 65.92\% and an accuracy of 62.66\%. This is in accordance with our hypothesis as this dataset had more training examples and all the examples contained images unlike the ScienceQA dataset. Additionally, a lot of the questions in the ScienceQA dataset involved very domain-specific vocabulary and trickier questions for the model to learn from given only the caption and hint which is why we wish to further explore models that take into account vision features as well.
+  
 
 # Introduction/Background/Motivation
 
