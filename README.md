@@ -95,7 +95,7 @@ We started with a textual question-answering task to evaluate the reasoning capa
 * T5 with reasoning: We further trained a T5-small model with reasoning capabilities, integrating the CoT approach.
 * T5 with reasoning and image captions: To assess the potential benefits of adding image information, we trained a T5-small model with reasoning capabilities and image captions.
 
-* <h3 id="VisualQA"> ➤ VisualQA Tasks </h3>
+<h3 id="VisualQA"> ➤ VisualQA Tasks </h3>
 In the second phase of our experiments, we focused on the VQA task, integrating visual embeddings with textual embeddings.
 
 * Fine-tuned VQA model on Science QA Dataset: We fine-tuned the pre-trained ViLT(Vision \& Language Transformer) model for visual question answering. We created domain-specific vocabulary and annotations using the ScienceQA dataset and used the ViLT model to generate answers. The ViLT model, however, did not perform well on the dataset as it was constrained to generating single-word answers and lacked the capability of generating coherent reasoning like Text-to-Text Language models (T5).
@@ -104,7 +104,21 @@ In the second phase of our experiments, we focused on the VQA task, integrating 
 
 We ran our experiments for answer generation on both TextVQA and ScienceQA dataset along with setting up the training for Answer and Explanation generation solely on the ScienceQA dataset where we had ground truth explanations (solutions) for which we measured the Rogue F1 scores.
 
-  
+<h3 id="Experimentation"> ➤ Experimental Settings and Hyperparameters </h3>  
+
+We set-up our experiments on Google Cloud Platform using GPU setting for the training and evaluation of our models. For the experiments with the T5 model, we used the Adam Optimizer for training with a learning rate of 1e-5. We also used a linear learning rate scheduler with number of training steps as 10000 and a number of warm up steps as 500. We set the max input and output length depending on the downstream task we attempted to solve (128 for answer generation and 256 for explanation generation). 
+
+We also explored gradient clipping to avoiding exploding gradient in the training strategy. We monitored both the training and validation loss after each epoch with the total number of epochs finally set to 10.
+
+<h3 id="Metrics"> ➤ Metrics </h3>  
+
+To measure the performance of the models, we used the following metrics:
+
+1. Accuracy: We computed the accuracy by comparing the model’s predictions with the ground truth answers.
+2. ROUGE F1 score: These metrics evaluate the quality of the generated text by comparing it to the reference text. They provide a quantitative measure of the model’s performance. The F1 score was chosen as it provides a balance between precision and recall.
+
+<h3 id="KeyFindings"> ➤ Key Findings </h3>  
+
 
 
 \\\\
