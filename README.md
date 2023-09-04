@@ -115,7 +115,7 @@ We also explored gradient clipping to avoiding exploding gradient in the trainin
 To measure the performance of the models, we used the following metrics:
 
 1. Accuracy: We computed the accuracy by comparing the model’s predictions with the ground truth answers.
-2. ROUGE F1 score: These metrics evaluate the quality of the generated text by comparing it to the reference text. They provide a quantitative measure of the model’s performance. The F1 score was chosen as it provides a balance between precision and recall.
+2. ROUGE $F_{1}$ score: These metrics evaluate the quality of the generated text by comparing it to the reference text. They provide a quantitative measure of the model’s performance. The $F_{1}$ score was chosen as it provides a balance between precision and recall.
 
 <h3 id="KeyFindings"> ➤ Key Findings </h3>  
 
