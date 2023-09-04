@@ -20,7 +20,7 @@
           <li> <a href= "#Metrics">  Metrics </li>
            <li> <a href= "#Results"> Results & Loss Curves</li>
            <li> <a href= "#KeyFindings"> Key Findings </li> 
-             <li> <a href= "#ModelOutput"> Model Outputs </li>
+             <li> <a href= "#ModelOutput"> Sample Model Outputs </li>
       </ul>
     <li><a href="#References"> ➤ References</a></li>
   </ol>
@@ -167,9 +167,7 @@ Descriptions of Individual Models and Associated Loss Curve:
 * For the downstream task of answer generation, we also see that the T5-small model trained on the TextVQA dataset outperformed the other models tested on the ScienceQA dataset with a training accuracy of 65.92\% and an accuracy of 62.66\%. This is in accordance with our hypothesis as this dataset had more training examples and all the examples contained images unlike the ScienceQA dataset. Additionally, a lot of the questions in the ScienceQA dataset involved very domain-specific vocabulary and trickier questions for the model to learn from given only the caption and hint which is why we wish to further explore models that take into account vision features as well.
 
 
-
-
-<h3 id="ModelOutput"> ➤ Model Output Samples </h3>  
+<h3 id="ModelOutput"> ➤ Sample Model Outputs </h3>  
 
   
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
