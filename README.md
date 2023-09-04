@@ -159,9 +159,6 @@ Descriptions of Individual Models and Associated Loss Curve:
 
 <h3 id="KeyFindings"> ➤ Key Findings </h3>  
 
-* The figure below shows the T5 model output generating answer and explanation simultaneously. It also has the example input (which is a mix of question, choices, context, and hint) and the target output which the model uses in its training phase.
-  ![Fig-1](./images/1.png)
-
 * Training and Validation Loss Curves: We analyzed the loss curves specific to all 6 model variants illustrated using Figures 1-6 respectively. Most of the curves showed a sharp dip in the training loss in the first epoch suggesting that the pre-trained T5 model was pretty quick in re-adjusting its weights to better align with the domain-specific examples. The validation losses in most cases were pretty low from the initial get-go. Also, we observed convergence in the training and validation losses for almost all model variants suggesting that running the model for more than 10 epochs would pose the risk of running into an overfitting problem. Also, for (Model6) which we found to be the best-performing model, we could see pretty low values of both training and validation losses when compared to other models from initial epochs.
 * The models that were trained using image captions along with context and hint (Model 2) did not outperform the model without the image captions (Model 1) when compared on the validation dataset. This was slightly counter-intuitive but the reason for it might be that the model suffered from information overload and could not specifically utilize the captions when provided along with hint and context. This also highlights the importance of working with models that can exploit the mutual synergies of different modalities like text and vision features with an attention mechanism to generate coherent reasoning. The idea of using the image features as textual image captions did not yield enhanced performance.
 * The model that was trained to generate answers and explanations simultaneously (Model3) was outperformed by the model trained on just generating answers (Model2). This emphasizes the fact that task-specific training gives  better results and prevents the model from information load.
@@ -171,7 +168,13 @@ Descriptions of Individual Models and Associated Loss Curve:
 
 
 <h3 id="ModelOutput"> ➤ Sample Model Outputs </h3>  
+* The figure below shows the T5 model output generating answer and explanation simultaneously. It also has the example input (which is a mix of question, choices, context, and hint) and the target output which the model uses in its training phase.
 
+  ![Fig-1](./images/1.png)
+
+* The figure below shows the same T5 model as in Figure 1 above finetuned for the task of generating answer, explanation, and lecture simultaneously. This produces a rich expression and reasoning behind the model’s answers.
+
+  ![Fig-2](./images/2.png)
   
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
