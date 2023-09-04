@@ -79,6 +79,24 @@ By integrating CoT and VQA, we hope to leverage the strengths of both approaches
 Moreover, our research could inspire future work on novel architectures and algorithms that capitalize on the synergies between CoT and VQA, pushing the boundaries of what is possible with current AI technology. Our findings may also contribute to the development of more interpretable models, as generating rationales for each choice can help explain the model's decision-making process, making it more transparent and understandable for human users.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+<!--Experiments & Results -->
+<h2 id="Experiments and Results"> Experiments and Results </h2>
+
+To evaluate the success of our proposed approach, we conducted a series of experiments using various models and configurations. We then compared the results, both quantitatively and qualitatively, to assess the effectiveness of our approach in enhancing the reasoning and question-answering capabilities of LMs.
+
+The memory and computational requirements needed for creating scalable VQA models constrained us with using models that use both image and text features for question answering. We tried a couple of multi-modal frameworks like ViLT <a href="#5"> [5] </a> and VisualBERT <a href="#7"> [7] </a>. We fine-tuned the ViLT model on the ScienceQA dataset by manually creating domain-specific vocabulary and annotations with scores for probable answers. The model, however, did not perform well on the dataset as it was constrained to generating single-word answers and lacked the capability of generating coherent reasoning like Text-to-Text Language models (T5 <a href="#4"> [4] </a>).
+
+<h3 id="TextQA"> TextQA Tasks </h3>
+We started with a textual question-answering task to evaluate the reasoning capabilities of our models. The following models were used in our experiments:
+
+* Baseline: A simple QA model based on DistilBERT and RoBERTa. These models were chosen due to their relatively small size, making them suitable for training with our computational resources. Moreover, they have been shown to perform decently on multiple-choice questions.
+* T5 without reasoning: We trained a T5-small model without any reasoning capabilities to assess the impact of adding CoT reasoning.
+* T5 with reasoning: We further trained a T5-small model with reasoning capabilities, integrating the CoT approach.
+* T5 with reasoning and image captions: To assess the potential benefits of adding image information, we trained a T5-small model with reasoning capabilities and image captions.
+  
+
+
 \\\\
 Contributors: 
 
