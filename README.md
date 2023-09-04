@@ -28,7 +28,7 @@
 <h2 id="Background"> Introduction/Background/Motivation </h2>
 The advent of deep learning has led to the development
 of powerful language models (LMs) that excel in various
-tasks, such as question-answering, translation, and sentiment analysis. However, there is still potential for improvement, particularly in enhancing their reasoning abilities and incorporating multimodal data like images. This report investigates the potential impact of combining Chain-of-Thought reasoning (CoT) <a href="#20"> [20] </a> and Visual Question Answering (VQA) [18] techniques to improve LMs’ accuracy
+tasks, such as question-answering, translation, and sentiment analysis. However, there is still potential for improvement, particularly in enhancing their reasoning abilities and incorporating multimodal data like images. This report investigates the potential impact of combining Chain-of-Thought reasoning (CoT) <a href="#20"> [20] </a> and Visual Question Answering (VQA) <a href="#18"> [18] </a> techniques to improve LMs’ accuracy
 in solving multiple-choice questions.
 
 
