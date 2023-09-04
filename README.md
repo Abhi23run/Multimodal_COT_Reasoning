@@ -29,19 +29,22 @@
 <a id="1"> [1] </a>
 Abdokamr. Question answering with t5, Aug 2021 (https://www.kaggle.com/code/abdokamr/question-answering-with-t5)<br/>
 <a id="2"> [2] </a>
-Abdokamr. Question answering with t5, Aug 2021 (https://www.kaggle.com/code/abdokamr/question-answering-with-t5)<br/>
+Hugging Face. Document question answering. (https://huggingface.co/docs/transformers/tasks/document_question_answering)<br/>
 <a id="3"> [3] </a>
-Abdokamr. Question answering with t5, Aug 2021 (https://www.kaggle.com/code/abdokamr/question-answering-with-t5)<br/>
+Hugging Face. Multiple choice. (https://huggingface.co/docs/transformers/tasks/multiple_choice)<br/>
 <a id="4"> [4] </a>
-Abdokamr. Question answering with t5, Aug 2021 (https://www.kaggle.com/code/abdokamr/question-answering-with-t5)<br/>
+Hugging Face. T5 small model. (https://huggingface.co/t5-small)<br/>
 <a id="5"> [5] </a>
-Abdokamr. Question answering with t5, Aug 2021 (https://www.kaggle.com/code/abdokamr/question-answering-with-t5)<br/>
+Hugging Face. Vilt model documentation. (https://huggingface.co/docs/transformers/model_doc/vilt)<br/>
 <a id="6"> [6] </a>
-Abdokamr. Question answering with t5, Aug 2021 (https://www.kaggle.com/code/abdokamr/question-answering-with-t5)<br/>
+Hugging Face. Vision transformer model documentation. (https://huggingface.co/docs/transformers/model_doc/vit)<br/>
 <a id="7"> [7] </a>
-Abdokamr. Question answering with t5, Aug 2021 (https://www.kaggle.com/code/abdokamr/question-answering-with-t5)<br/>
+Hugging Face. Visual bert model documentation. (https://huggingface.co/docs/transformers/model_doc/visual_bert)<br/>
 <a id="8"> [8] </a>
-Abdokamr. Question answering with t5, Aug 2021 (https://www.kaggle.com/code/abdokamr/question-answering-with-t5)<br/>
+Mor Geva, Daniel Khashabi, Elad Segal, Tushar Khot,
+Dan Roth, and Jonathan Berant. Did aristotle use a laptop?
+a question answering benchmark with implicit reasoning
+strategies. Transactions of the Association for Computational Linguistics, 9:346–361 <br/>
 <a id="9"> [9] </a>
 Abdokamr. Question answering with t5, Aug 2021 (https://www.kaggle.com/code/abdokamr/question-answering-with-t5)<br/>
 <a id="1"> [1] </a>
