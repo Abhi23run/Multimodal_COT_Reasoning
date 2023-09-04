@@ -13,13 +13,13 @@
     <li><a href="#Background"> ➤ Introduction/Background/Motivation</a></li>
     <li><a href="#Approach"> ➤ Approach</a></li>
     <li><a href="#Experiments and Results"> ➤ Experiments and Results</a></li>
-      <ol> 
-       <li> <a href= "#TextQA">  ➤ Text QA tasks </li>
-        <li> <a href= "#VisualQA">  ➤ Visual QA tasks </li>
-         <li> <a href= "#Experimentation">  ➤  Experimental Settings and Hyperparameters </li>
-          <li> <a href= "#Metrics">  ➤ Metrics </li>
-           <li> <a href= "#KeyFindings">  ➤ Key Findings </li>
-      </ol>
+      <ul style="list-style-type:circle">
+       <li> <a href= "#TextQA">  Text QA tasks </li>
+        <li> <a href= "#VisualQA">   Visual QA tasks </li>
+         <li> <a href= "#Experimentation">  Experimental Settings and Hyperparameters </li>
+          <li> <a href= "#Metrics">  Metrics </li>
+           <li> <a href= "#KeyFindings"> Key Findings </li>
+      </ul>
     <li><a href="#References"> ➤ References</a></li>
   </ol>
 </details>
