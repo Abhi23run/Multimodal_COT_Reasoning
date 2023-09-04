@@ -9,15 +9,17 @@
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#Background"> ➤ Background</a></li>
-    <li><a href="#Problem Definition"> ➤ Problem Definition</a></li>
-    <li><a href="#Data Collection"> ➤ Data Collection</a></li>
-    <li><a href="#Results & Discussion"> ➤ Results & Discussion</a></li>
+    <li><a href="#Abstract"> ➤ Abstract</a></li>
+    <li><a href="#Background"> ➤ Introduction/Background/Motivation</a></li>
+    <li><a href="#Approach"> ➤ Approach</a></li>
+    <li><a href="#Experiments and Results"> ➤ Experiments and Results</a></li>
     <li><a href="#References"> ➤ References</a></li>
-    <li><a href="#Project Logistics"> ➤ Project Logistics</a></li>
   </ol>
 </details>
 
+<!-- Abstract -->
+<h2 id="Abstract"> Abstract </h2>
+Recent advancements in deep learning have led to the development of powerful language models (LMs) that excel in various tasks. Despite these achievements, there is still room for improvement, particularly in enhancing reasoning abilities and incorporating multimodal data. This report investigates the potential impact of combining Chain-of-Thought (CoT) reasoning and Visual Question Answering (VQA) techniques to improve LMs’ accuracy in solving multiple-choice questions. By employing TextVQA and ScienceQA datasets, we assessed the effectiveness of three text embedding methods and three visual embedding approaches. Our experiments aimed to fill the gap in current research by investigating the combined impact of CoT and VQA, contributing to the understanding of how these techniques can improve the reasoning capabilities of state-of-the-art models like GPT-4. Results from our experiments demonstrated the potential of these approaches in enhancing LLMs’ reasoning and question-answering capabilities, providing insights for further research and development in the field, and paving the way for more accurate and reliable AI systems that can handle complex reasoning tasks across multiple modalities.
 
 Contributors: 
 
