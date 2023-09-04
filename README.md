@@ -88,7 +88,7 @@ To evaluate the success of our proposed approach, we conducted a series of exper
 The memory and computational requirements needed for creating scalable VQA models constrained us with using models that use both image and text features for question answering. We tried a couple of multi-modal frameworks like ViLT <a href="#5"> [5] </a> and VisualBERT <a href="#7"> [7] </a>. We fine-tuned the ViLT model on the ScienceQA dataset by manually creating domain-specific vocabulary and annotations with scores for probable answers. The model, however, did not perform well on the dataset as it was constrained to generating single-word answers and lacked the capability of generating coherent reasoning like Text-to-Text Language models (T5 <a href="#4"> [4] </a>).
 
 <h3 id="TextQA"> TextQA Tasks </h3>
-We started with a textual question-answering task to evaluate the reasoning capabilities of our models. The following models were used in our experiments:
+➤ We started with a textual question-answering task to evaluate the reasoning capabilities of our models. The following models were used in our experiments:
 
 * Baseline: A simple QA model based on DistilBERT and RoBERTa. These models were chosen due to their relatively small size, making them suitable for training with our computational resources. Moreover, they have been shown to perform decently on multiple-choice questions.
 * T5 without reasoning: We trained a T5-small model without any reasoning capabilities to assess the impact of adding CoT reasoning.
