@@ -43,6 +43,37 @@ By employing these datasets and combining CoT and VQA techniques, we strive to d
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
+<!--Approach -->
+<h2 id="Approach"> Approach </h2>
+
+The primary objective of this project is to explore the synergistic effects of CoT and VQA on LMs' performance. CoT involves generating rationales for each choice, providing a logical explanation for the model's decision-making process <a href="#20"> [20] </a>. VQA includes using images as additional information to answer questions <a href="#18"> [18] </a>. By combining these techniques, we aim to demonstrate substantial improvements in LMs' reasoning and question-answering capabilities.
+
+To assess these techniques' effectiveness, we experimented with three text embedding methods and three visual embedding approaches. Current research primarily focuses on CoT and VQA individually <a href="#20"> [20] </a> <a href="#18"> [18] </a>. Our project aims to fill the gap by investigating the combined impact of CoT and VQA, contributing to the understanding of how these techniques can improve the reasoning capabilities of state-of-the-art models like GPT-4 <a href="#21"> [21] </a>.
+
+The datasets utilized in our experiments are TextVQA and ScienceQA <a href="#19"> [19] </a> <a href="#17"> [17] </a>. TextVQA consists of 45,336 questions based on 28,408 images from the Open Images dataset, requiring reasoning and reading about text in the image <a href="#18"> [18] </a>. ScienceQA contains 21,208 multimodal multiple-choice science questions collected from elementary and high school science curricula, covering a wide range of subjects and offering a rich diversity of domains <a href="#8"> [8] </a>
+
+We set up the following text embedding models for our experiments: 1) a simple QA model using DistilBERT as a baseline <a href="#15"> [15] </a>; 2) T5 with reasoning without image captions <a href="#9"> [9] </a>}; and 3) T5 with reasoning and image captions <a href="#9"> [9] </a>. For visual embedding models, we considered: 1) a baseline VQA model <a href="#11"> [11] </a>; 2) integrating visual embeddings with textual embeddings for the baseline textual model <a href="#13"> [13] </a>; and 3) visual embedding with textual embeddings for the T5 model <a href="#10"> [10] </a>.
+
+We thought this would be a fruitful approach since VQA and CoT individually already improved model performance substantially on similar benchmarks <a href="#20"> [20] </a> <a href="#18"> [18] </a>. Using VQA together with CoT is a new approach, which we aimed to explore in this study <a href="#21"> [21] </a>.
+
+Anticipated problems included limitations with computational resources, and we encountered some models returning surprisingly poor performance (RoBERTa) contrary to expectations <a href="#12"> [12] </a>. The very first thing we tried did not work, but we iteratively refined our approach to address these issues.\\
+
+We did not use any code from repositories, but we used the following for reference:
+
+
+\begin{enumerate}
+    \item Document Question Answering \cite{HuggingFaceDocsDQA}
+    \item Question Answering With T5 | Kaggle \cite{abdokamr_2021}
+    \item Towards Data Science: Adding Custom Layers on Top of a Hugging Face Model \cite{TDS20}
+    \item Multiple choice \cite{MultipleChoice}
+\end{enumerate}
+
+By combining CoT and VQA techniques, we strive to demonstrate the potential of these approaches in enhancing the reasoning and question-answering capabilities of LMs. Our experiments may pave the way for further research and development in the field, leading to more accurate and reliable AI systems that can handle complex reasoning tasks across multiple modalities.
+
+By integrating CoT and VQA, we hope to leverage the strengths of both approaches, enabling LMs to reason more systematically and accurately when provided with textual and visual information. This combined approach could be particularly useful for real-world applications where data comes in various forms and requires the integration of multiple sources of information for effective decision-making.
+
+Moreover, our research could inspire future work on novel architectures and algorithms that capitalize on the synergies between CoT and VQA, pushing the boundaries of what is possible with current AI technology. Our findings may also contribute to the development of more interpretable models, as generating rationales for each choice can help explain the model's decision-making process, making it more transparent and understandable for human users.
+
 \\\\
 Contributors: 
 
