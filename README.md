@@ -1,6 +1,6 @@
 # Towards a Unified Multimodal CoT Reasoning Framework
  [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
- [![DVC](https://img.shields.io/badge/-Pytorch-blue.svg?logo=data-version-control&style=social)](https://dvc.org/?utm_campaign=badge)
+ [![DVC](https://img.shields.io/badge/-Pytorch-white.svg?logo=pytorch&style=social)](https://dvc.org/?utm_campaign=badge)
 
 Contributors: 
 
