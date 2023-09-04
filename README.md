@@ -129,7 +129,7 @@ To measure the performance of the models, we used the following metrics:
 * For the downstream task of answer generation, we also see that the T5-small model trained on the TextVQA dataset outperformed the other models tested on the ScienceQA dataset with a training accuracy of 65.92\% and an accuracy of 62.66\%. This is in accordance with our hypothesis as this dataset had more training examples and all the examples contained images unlike the ScienceQA dataset. Additionally, a lot of the questions in the ScienceQA dataset involved very domain-specific vocabulary and trickier questions for the model to learn from given only the caption and hint which is why we wish to further explore models that take into account vision features as well.
 
 <h3 id="Results"> ➤ Results & Loss Curves </h3>  
-<p style="text-align: center;">Table below depicts Evaluation metrics for models on the generation downstream tasks on ScienceQA Dataset</p>
+<p style="text-align: center;">Table below depicts Evaluation metrics for models on the generation downstream tasks on ScienceQA Dataset : </p>
 
 | Model   | Generation Task            | Train Accuracy | Validation Accuracy | Rouge-1 F1 | Rouge-2 F1 | Rouge-L F1 |
 |---------|----------------------------|----------------|---------------------|------------|------------|------------|
@@ -140,7 +140,7 @@ To measure the performance of the models, we used the following metrics:
 | Model 5 | Answer (Input Explanation) |     45.01%     |        41.99%       |      -     |      -     |      -     |
 | Model 6 | Answer (Input Explanation) |     51.76%     |        48.86%       |      -     |      -     |      -     |
 
-Descriptions of Models : 
+Descriptions of Individual Models : 
 * **Model 1**: Baseline pre-trained T5 model fine-tuned for the task of answer generation without the usage of image captions.
 * **Model 2**: Baseline pre-trained T5 model fine-tuned for the task of answer generation with the usage of image captions.
 * **Model 3**: Baseline pre-trained T5 model fine-tuned for the task of answer and explanation generation with the image captions.
