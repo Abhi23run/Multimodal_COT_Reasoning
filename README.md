@@ -237,9 +237,3 @@ Zhuosheng Zhang, Aston Zhang, Mu Li, Hai Zhao,
 George Karypis, and Alex Smola. Multimodal chain-of-thought reasoning in language models <br/>
 
 
-
-# Work Division
-
-See Table
-[\[tab:contributions\]](#tab:contributions){reference-type="ref"
-reference="tab:contributions"} for work division.
