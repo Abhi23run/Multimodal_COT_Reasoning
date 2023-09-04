@@ -60,13 +60,10 @@ Anticipated problems included limitations with computational resources, and we e
 
 We did not use any code from repositories, but we used the following for reference:
 
-
-\begin{enumerate}
-    \item Document Question Answering \cite{HuggingFaceDocsDQA}
-    \item Question Answering With T5 | Kaggle \cite{abdokamr_2021}
-    \item Towards Data Science: Adding Custom Layers on Top of a Hugging Face Model \cite{TDS20}
-    \item Multiple choice \cite{MultipleChoice}
-\end{enumerate}
+1. Document Question Answering <a href="#2"> [2] </a>
+2. Question Answering With T5 <a href="#1"> [1] </a>
+3. Towards Data Science: Adding Custom Layers on Top of a Hugging Face Model <a href="#16"> [16] </a>
+4. Multiple choice <a href="#3"> [3] </a>
 
 By combining CoT and VQA techniques, we strive to demonstrate the potential of these approaches in enhancing the reasoning and question-answering capabilities of LMs. Our experiments may pave the way for further research and development in the field, leading to more accurate and reliable AI systems that can handle complex reasoning tasks across multiple modalities.
 
@@ -74,6 +71,7 @@ By integrating CoT and VQA, we hope to leverage the strengths of both approaches
 
 Moreover, our research could inspire future work on novel architectures and algorithms that capitalize on the synergies between CoT and VQA, pushing the boundaries of what is possible with current AI technology. Our findings may also contribute to the development of more interpretable models, as generating rationales for each choice can help explain the model's decision-making process, making it more transparent and understandable for human users.
 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 \\\\
 Contributors: 
 
