@@ -24,72 +24,14 @@
 
 *Recent advancements in deep learning have led to the development of powerful language models (LMs) that excel in various tasks. Despite these achievements, there is still room for improvement, particularly in enhancing reasoning abilities and incorporating multimodal data. This report investigates the potential impact of combining Chain-of-Thought (CoT) reasoning and Visual Question Answering (VQA) techniques to improve LMs’ accuracy in solving multiple-choice questions. By employing TextVQA and ScienceQA datasets, we assessed the effectiveness of three text embedding methods and three visual embedding approaches. Our experiments aimed to fill the gap in current research by investigating the combined impact of CoT and VQA, contributing to the understanding of how these techniques can improve the reasoning capabilities of state-of-the-art models like GPT-4. Results from our experiments demonstrated the potential of these approaches in enhancing LMs’ reasoning and question-answering capabilities, providing insights for further research and development in the field, and paving the way for more accurate and reliable AI systems that can handle complex reasoning tasks across multiple modalities.*
 
-<!-- References -->
-<h2 id="References"> References </h2>
-<a id="1"> [1] </a>
-Abdokamr. Question answering with t5, Aug 2021 (https://www.kaggle.com/code/abdokamr/question-answering-with-t5)<br/>
-<a id="2"> [2] </a>
-Hugging Face. Document question answering. (https://huggingface.co/docs/transformers/tasks/document_question_answering)<br/>
-<a id="3"> [3] </a>
-Hugging Face. Multiple choice. (https://huggingface.co/docs/transformers/tasks/multiple_choice)<br/>
-<a id="4"> [4] </a>
-Hugging Face. T5 small model. (https://huggingface.co/t5-small)<br/>
-<a id="5"> [5] </a>
-Hugging Face. Vilt model documentation. (https://huggingface.co/docs/transformers/model_doc/vilt)<br/>
-<a id="6"> [6] </a>
-Hugging Face. Vision transformer model documentation. (https://huggingface.co/docs/transformers/model_doc/vit)<br/>
-<a id="7"> [7] </a>
-Hugging Face. Visual bert model documentation. (https://huggingface.co/docs/transformers/model_doc/visual_bert)<br/>
-<a id="8"> [8] </a>
-Mor Geva, Daniel Khashabi, Elad Segal, Tushar Khot,
-Dan Roth, and Jonathan Berant. Did aristotle use a laptop?
-a question answering benchmark with implicit reasoning
-strategies. Transactions of the Association for Computational Linguistics, 9:346–361 <br/>
-<a id="9"> [9] </a>
-Daniel Khashabi, Tushar Chaudhary, Ayush Sen, Jing
-Chen, Yejin Choi, and Mirella Lapata. Unifiedqa: Crossing format boundaries with a single qa system (https://aclanthology.org/2020.findings-emnlp.171.pdf)<br/>
-<a id="10"> [10] </a>
-Wonjae Kim, Kyung-Min Lee, Jin-Hwa Lee, Chanho Park,
-Youngeun Jang, Seonguk Park, Byeongchang Yoon, and
-Sung Ju Hwang. Vilt: Vision-and-language transformer
-without convolution or region supervision.  (https://arxiv.org/pdf/2102.03334.pdf)<br/>
-<a id="11"> [11] </a>
-iunian Harold Li, Yatskar Mark, Chen Da, Matt Hessel,
-and Dragomir Radev. Visualbert: A simple and performant
-baseline for vision and language (https://arxiv.org/pdf/1908.03557.pdf)<br/>
-<a id="12"> [12] </a>
-Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Man-
-dar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke
-Zettlemoyer, and Veselin Stoyanov. Roberta: A robustly
-optimized bert pretraining approach (https://arxiv.org/pdf/1907.11692.pdf)<br/>
-<a id="13"> [13] </a>
-Jiasen Lu, Dhruv Batra, Devi Parikh, and Stefan Lee. Vil-
-bert: Pretraining task-agnostic visiolinguistic representations for vision-and-language tasks(https://arxiv.org/pdf/1908.02265.pdf)<br/>
-<a id="14"> [14] </a>
-OpenAI. Gpt-4 technical report <br/>
-<a id="15"> [15] </a>
-Victor Sanh, Lysandre Debut, Julien Chaumond, and
-Thomas Wolf. Distilbert, a distilled version of bert:
-smaller, faster, cheaper and lighter (https://arxiv.org/pdf/1910.01108v4.pdf)<br/>
-<a id="16"> [16] </a>
-Towards Data Science. Adding custom layers on top of a
-hugging face mode (https://towardsdatascience.com/adding-custom-layers-on-top-of-a-hugging-face-model-f1ccdfc257bd)<br/>
-<a id="17"> [17] </a>
-ScienceQA. Scienceqa: A multimodal multiple-choice science question dataset. (https://scienceqa.github.io/)<br/>
-<a id="18"> [18] </a>
-Amanpreet Singh, Vivek Natarajan, Meet Shah, Yu Jiang,
-Xinlei Chen, Dhruv Batra, DSOTA23evi Parikh, and Marcus Rohrbach. Towards vqa models that can read (https://arxiv.org/pdf/1904.08920.pdf)<br/>
-<a id="19"> [19] </a>
-Text VQA. Text vqa: A dataset for reasoning about text in images (https://textvqa.org/)<br/>
-<a id="20"> [20] </a>
-Ji Wei, Yixin Hao, Antoine Bosselut, and Yejin Choi.
-Chain-of-thought prompting elicits reasoning in large language models (https://arxiv.org/pdf/2201.11903.pdf)<br/>
-<a id="21"> [21] </a>
-Zhuosheng Zhang, Aston Zhang, Mu Li, Hai Zhao,
-George Karypis, and Alex Smola. Multimodal chain-of-thought reasoning in language models <br/>
-
 <!-- Background -->
 <h2 id="Background"> Introduction/Background/Motivation </h2>
+The advent of deep learning has led to the development
+of powerful language models (LMs) that excel in various
+tasks, such as question-answering, translation, and sentiment analysis. However, there is still potential for improvement, particularly in enhancing their reasoning abilities and incorporating multimodal data like images. This report investigates the potential impact of combining Chain-of-Thought reasoning (CoT) <a href="#20"> [20] </a> and Visual Question Answering (VQA) [18] techniques to improve LMs’ accuracy
+in solving multiple-choice questions.
+
+
 
 
 
@@ -377,6 +319,72 @@ generated explanation as input\
 []{#sec:model6 label="sec:model6"}**Model 6**: fine-tuned Model 2 for
 the task of answer generation with the model-generated explanation as
 input
+
+<!-- References -->
+<h2 id="References"> References </h2>
+<a id="1"> [1] </a>
+Abdokamr. Question answering with t5, Aug 2021 (https://www.kaggle.com/code/abdokamr/question-answering-with-t5)<br/>
+<a id="2"> [2] </a>
+Hugging Face. Document question answering. (https://huggingface.co/docs/transformers/tasks/document_question_answering)<br/>
+<a id="3"> [3] </a>
+Hugging Face. Multiple choice. (https://huggingface.co/docs/transformers/tasks/multiple_choice)<br/>
+<a id="4"> [4] </a>
+Hugging Face. T5 small model. (https://huggingface.co/t5-small)<br/>
+<a id="5"> [5] </a>
+Hugging Face. Vilt model documentation. (https://huggingface.co/docs/transformers/model_doc/vilt)<br/>
+<a id="6"> [6] </a>
+Hugging Face. Vision transformer model documentation. (https://huggingface.co/docs/transformers/model_doc/vit)<br/>
+<a id="7"> [7] </a>
+Hugging Face. Visual bert model documentation. (https://huggingface.co/docs/transformers/model_doc/visual_bert)<br/>
+<a id="8"> [8] </a>
+Mor Geva, Daniel Khashabi, Elad Segal, Tushar Khot,
+Dan Roth, and Jonathan Berant. Did aristotle use a laptop?
+a question answering benchmark with implicit reasoning
+strategies. Transactions of the Association for Computational Linguistics, 9:346–361 <br/>
+<a id="9"> [9] </a>
+Daniel Khashabi, Tushar Chaudhary, Ayush Sen, Jing
+Chen, Yejin Choi, and Mirella Lapata. Unifiedqa: Crossing format boundaries with a single qa system (https://aclanthology.org/2020.findings-emnlp.171.pdf)<br/>
+<a id="10"> [10] </a>
+Wonjae Kim, Kyung-Min Lee, Jin-Hwa Lee, Chanho Park,
+Youngeun Jang, Seonguk Park, Byeongchang Yoon, and
+Sung Ju Hwang. Vilt: Vision-and-language transformer
+without convolution or region supervision.  (https://arxiv.org/pdf/2102.03334.pdf)<br/>
+<a id="11"> [11] </a>
+iunian Harold Li, Yatskar Mark, Chen Da, Matt Hessel,
+and Dragomir Radev. Visualbert: A simple and performant
+baseline for vision and language (https://arxiv.org/pdf/1908.03557.pdf)<br/>
+<a id="12"> [12] </a>
+Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Man-
+dar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke
+Zettlemoyer, and Veselin Stoyanov. Roberta: A robustly
+optimized bert pretraining approach (https://arxiv.org/pdf/1907.11692.pdf)<br/>
+<a id="13"> [13] </a>
+Jiasen Lu, Dhruv Batra, Devi Parikh, and Stefan Lee. Vil-
+bert: Pretraining task-agnostic visiolinguistic representations for vision-and-language tasks(https://arxiv.org/pdf/1908.02265.pdf)<br/>
+<a id="14"> [14] </a>
+OpenAI. Gpt-4 technical report <br/>
+<a id="15"> [15] </a>
+Victor Sanh, Lysandre Debut, Julien Chaumond, and
+Thomas Wolf. Distilbert, a distilled version of bert:
+smaller, faster, cheaper and lighter (https://arxiv.org/pdf/1910.01108v4.pdf)<br/>
+<a id="16"> [16] </a>
+Towards Data Science. Adding custom layers on top of a
+hugging face mode (https://towardsdatascience.com/adding-custom-layers-on-top-of-a-hugging-face-model-f1ccdfc257bd)<br/>
+<a id="17"> [17] </a>
+ScienceQA. Scienceqa: A multimodal multiple-choice science question dataset. (https://scienceqa.github.io/)<br/>
+<a id="18"> [18] </a>
+Amanpreet Singh, Vivek Natarajan, Meet Shah, Yu Jiang,
+Xinlei Chen, Dhruv Batra, DSOTA23evi Parikh, and Marcus Rohrbach. Towards vqa models that can read (https://arxiv.org/pdf/1904.08920.pdf)<br/>
+<a id="19"> [19] </a>
+Text VQA. Text vqa: A dataset for reasoning about text in images (https://textvqa.org/)<br/>
+<a id="20"> [20] </a>
+Ji Wei, Yixin Hao, Antoine Bosselut, and Yejin Choi.
+Chain-of-thought prompting elicits reasoning in large language models (https://arxiv.org/pdf/2201.11903.pdf)<br/>
+<a id="21"> [21] </a>
+Zhuosheng Zhang, Aston Zhang, Mu Li, Hai Zhao,
+George Karypis, and Alex Smola. Multimodal chain-of-thought reasoning in language models <br/>
+
+
 
 # Work Division
 
