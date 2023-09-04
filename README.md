@@ -1,4 +1,4 @@
-# Towards a Unified Multimodal Reasoning Framework
+# Towards a Unified Multimodal CoT Reasoning Framework
 
 Contributors: 
 
