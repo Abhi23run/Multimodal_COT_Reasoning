@@ -3,6 +3,22 @@
  [![Pytorch](https://img.shields.io/badge/-Pytorch-white.svg?logo=pytorch&style=social)](https://pytorch.org/)
  [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20-Hugging%20Face-white?logo=huggingface&style=social)](https://huggingface.co/)
 
+ <!-- TABLE OF CONTENTS -->
+<h2 id="table-of-contents"> Table of Contents</h2>
+
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#Background"> ➤ Background</a></li>
+    <li><a href="#Problem Definition"> ➤ Problem Definition</a></li>
+    <li><a href="#Data Collection"> ➤ Data Collection</a></li>
+    <li><a href="#Results & Discussion"> ➤ Results & Discussion</a></li>
+    <li><a href="#References"> ➤ References</a></li>
+    <li><a href="#Project Logistics"> ➤ Project Logistics</a></li>
+  </ol>
+</details>
+
+
 Contributors: 
 
 Abhinav Arun<br>
