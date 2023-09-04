@@ -19,6 +19,8 @@
          <li> <a href= "#Experimentation">  Experimental Settings and Hyperparameters </li>
           <li> <a href= "#Metrics">  Metrics </li>
            <li> <a href= "#KeyFindings"> Key Findings </li>
+            <li> <a href= "#Results"> Results </li>
+             <li> <a href= "#ModelOutput"> Model Outputs </li>
       </ul>
     <li><a href="#References"> ➤ References</a></li>
   </ol>
