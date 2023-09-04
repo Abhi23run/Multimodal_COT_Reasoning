@@ -101,6 +101,7 @@ In the second phase of our experiments, we focused on the VQA task, integrating 
 * Fine-tuned VQA model on Science QA Dataset: We fine-tuned the pre-trained ViLT(Vision \& Language Transformer) model for visual question answering. We created domain-specific vocabulary and annotations using the ScienceQA dataset and used the ViLT model to generate answers. The ViLT model, however, did not perform well on the dataset as it was constrained to generating single-word answers and lacked the capability of generating coherent reasoning like Text-to-Text Language models (T5).
 * We also attempted to integrate the visual embeddings from models like DETR into the VisualBert model. However, we were not successfully able to concatenate the visual and text features to re-train the VisualBert model. This was due to the varying hidden dimension of the textual encodings for different downstream task models in VisualBert.
 * Integrated model with T5 textual embeddings: We generated image captions from a Vision Transformer model (ViT-GPT2 <a href="#6"> [6] </a>) and  used that along with textual input to T5-small model and experimented with different training strategies and settings to assess the impact of adding reasoning capabilities and image context.
+
 We ran our experiments for answer generation on both TextVQA and ScienceQA dataset along with setting up the training for Answer and Explanation generation solely on the ScienceQA dataset where we had ground truth explanations (solutions) for which we measured the Rogue F1 scores.
 
   
