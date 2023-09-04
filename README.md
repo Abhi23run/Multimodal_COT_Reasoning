@@ -1,5 +1,4 @@
-# cs7643-final-project
-Final project for CS7643
+# Towards a Unified Multimodal Reasoning Framework
 
 Contributors: 
 
