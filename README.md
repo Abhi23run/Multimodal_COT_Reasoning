@@ -27,7 +27,7 @@
 <!-- References -->
 <h2 id="References"> References </h2>
 <a id="1"> [1] </a>
-[Abdokamr. Question answering with T5, Aug 2021](https://www.kaggle.com/code/abdokamr/question-answering-with-t5/)
+![Abdokamr. Question answering with T5, Aug 2021](https://www.kaggle.com/code/abdokamr/question-answering-with-t5/)
 
 <!-- Background -->
 <h2 id="Background"> Introduction/Background/Motivation </h2>
