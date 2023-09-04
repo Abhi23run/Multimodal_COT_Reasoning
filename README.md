@@ -149,7 +149,7 @@ Descriptions of Individual Models :
 * **Model 6**: fine-tuned Model 2 for the task of answer generation with the model-generated explanation as input.
 
 Loss Curves for Individual Models : 
-
+![Plot-1](./Images/Loss_Plot_Model8_Final_1.png)
 
 <h3 id="ModelOutput"> ➤ Model Output Samples </h3>  
 
