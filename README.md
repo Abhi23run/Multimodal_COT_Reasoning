@@ -185,7 +185,17 @@ Descriptions of Individual Models and Associated Loss Curve:
 properly finetuning the model. The ViLT model for question answering produces a very generic response and is not
 able to output coherent sentences as it generates a probability distribution over the entire vocabulary.
 
-  <img src="./images/train_example_scienceqa.png" width=600 height = 300 > 
+  <p> <img src="./images/train_example_scienceqa.png" width=600 height = 300 >  
+      <em><ul>
+       <li> Questions: Which is this organism’s common name? </li>
+       <li> Choices: crown-of-thorns sea star, Acanthaster planci </li>
+       <li> Caption: a blue and white vase sitting on top of a rock </li>
+       <li> T5 model’s answer: crown-of-thorns sea star </li>
+       <li> ViLT Model’s Answer: fish </li>
+       <li> Target Answer: crown-of-thorns sea star </li>
+      </em>
+  </p>
+  
   
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
