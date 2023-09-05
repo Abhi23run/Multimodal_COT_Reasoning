@@ -134,27 +134,27 @@ To measure the performance of the models, we used the following metrics:
 Descriptions of Individual Models and Associated Loss Curve: 
 * **Model 1**: Baseline pre-trained T5 model fine-tuned for the task of answer generation without the usage of image captions.
   
-  ![Plot-1](./images/Loss_Plot_Model8_Final_1.png = 600*300)
+  <img src="./images/Loss_Plot_Model8_Final_1.png" width=600 height = 300 >
   <br/>
 * **Model 2**: Baseline pre-trained T5 model fine-tuned for the task of answer generation with the usage of image captions.
   
-  ![Plot-2](./images/Loss_Plot_Model2_Final_2.png)
+  <img src="./images/Loss_Plot_Model2_Final_2.png" width=600 height = 300 >
   <br/>
 * **Model 3**: Baseline pre-trained T5 model fine-tuned for the task of answer and explanation generation with the image captions.
   
-  ![Plot-3](./images/loss_plot_model_3_Final_3.png)
+  <img src="./images/loss_plot_model_3_Final_3.png" width=600 height = 300 >
   <br/>
 * **Model 4**: Model fine-tuned for the task of generating both answers and explanations using the fine-tuned model for answer generation.
   
-  ![Plot-4](./images/Loss_Plot_Model6_Final_4.png)
+  <img src="./images/Loss_Plot_Model6_Final_4.png" width=600 height = 300 >
   <br/>
 * **Model 5**: Baseline pre-trained T5 model fine-tuned for the task of answer generation with the model generated explanation as input.
   
-  ![Plot-5](./images/loss_plot_model_5_Final_5.png)
+  <img src="./images/loss_plot_model_5_Final_5.png" width=600 height = 300 >
   <br/>
 * **Model 6**: fine-tuned Model 2 for the task of answer generation with the model-generated explanation as input.
   
-  ![Plot-6](./images/Loss_Plot_Model14_Final_6.png)
+  <img src="./images/Loss_Plot_Model14_Final_6.png" width=600 height = 300 >
   <br/>
 
 <h3 id="KeyFindings"> ➤ Key Findings </h3>  
