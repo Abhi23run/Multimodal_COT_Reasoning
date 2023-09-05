@@ -134,7 +134,7 @@ To measure the performance of the models, we used the following metrics:
 Descriptions of Individual Models and Associated Loss Curve: 
 * **Model 1**: Baseline pre-trained T5 model fine-tuned for the task of answer generation without the usage of image captions.
   
-  ![Plot-1](./images/Loss_Plot_Model8_Final_1.png)
+  ![Plot-1](./images/Loss_Plot_Model8_Final_1.png = 600*300)
   <br/>
 * **Model 2**: Baseline pre-trained T5 model fine-tuned for the task of answer generation with the usage of image captions.
   
